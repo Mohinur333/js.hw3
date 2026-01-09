@@ -1,13 +1,12 @@
 //first task
 
 let banana = +prompt('Введите кол-во бананов' )
-for(let i = 0; i < 1; i++){
-console.log('1 banana');
-}
-
-let bananas = +prompt('Ведите кол-во бананов')
-for(let i = 2; i <= 5; i++){
-    console.log(i + '  bananas');
+if(banana === 1){
+  console.log(' 1 банан ');
+}else if(num > 1){
+  console.log(num + ' бананы ');
+}else{
+console.log(' error ');
 }
 
 //second task
@@ -19,14 +18,14 @@ if(i%2 == 0){
     num++
 }
 }
-console.log(num + ' количество четных чисел ');
+console.log(num + ' четных чисел ');
 
 //third task
 let number = +prompt('Введите число')
 let degree = +prompt('Введите степень')
 let answer = 1
 
-for(let i = 1; i <= number; i++){
-    answer = number *= degree
+for(let i = 1; i <= degree; i++){
+  answer *=number
 }
 alert(answer)
